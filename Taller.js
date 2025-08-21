@@ -60,7 +60,7 @@ let persona = {
 let hobbies = ["Pintar", "Diseñar", "Dormir"];
 
 console.log(typeof persona); 
-console.log(typeof hobbies); //Un array no deja de ser igual un objeto, ambos son objetos que almacenan info
+console.log(typeof hobbies); //Un array no deja de ser un objeto, ambos son objetos que almacenan info
 
 
 
@@ -82,8 +82,8 @@ console.log(numero1 + numero2); // Se concatena
 console.log(numero1 * numero2); // Convierte el String en numero
 
 // 3.2 
-console.log(String(45));    // "45"   string
-console.log(Number("300")); // 300    number
+console.log(String(25));    // "25"   string
+console.log(Number("100")); // 100    number
 console.log(Boolean(""));   // false  string vacío es falso
 console.log(Boolean("hola")); // true   cualquier string no vacío es verdadero
 
@@ -187,6 +187,7 @@ let coche = {
 };
 
 coche.mostrarMarca();
+//.this se refiere al objeto actual en el que se ejecuta el codigo, o sea coche
 
 
 
@@ -199,7 +200,7 @@ coche.mostrarMarca();
 console.log(" 7. Arrays");
 
 
-//  7.1 mutables
+//  7.1 
 let frutas = ["Manzana", "Banana"];
 console.log(frutas); 
 
@@ -210,13 +211,13 @@ frutas.pop();
 console.log(frutas); 
 
 
-// 7.2 inmutables
+// 7.2 
 
 
 let numeros = [1, 2, 3];
 console.log("Original:", numeros);
 
-//num = cada elemento del array
+//num = cada elemento del array, lo va recorriendo
 
 let dobles = numeros.map(num => num * 2);
 console.log("(x2):", dobles);
@@ -255,6 +256,7 @@ let libro = {
 
 libro.mostrarInfo();
 
+
 //8.2
 class Animal {
   constructor(nombre) {
@@ -268,6 +270,7 @@ class Animal {
 
 let miAnimal = new Animal("Misifus");
 console.log(miAnimal.saludar());
+
 
 // 8.3
 class Perro extends Animal {
