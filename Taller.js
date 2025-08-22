@@ -60,7 +60,7 @@ let persona = {
 let hobbies = ["Pintar", "Diseñar", "Dormir"];
 
 console.log(typeof persona); 
-console.log(typeof hobbies); //Un array no deja de ser un objeto, ambos son objetos que almacenan info
+console.log(typeof hobbies); //un array no deja de ser un objeto, ambos sn objetos que almacenan info
 
 
 
@@ -78,8 +78,8 @@ console.log("3. Conversión de Tipos");
 let numero1 = 10;  
 let numero2 = "5";    
 
-console.log(numero1 + numero2); // Se concatena
-console.log(numero1 * numero2); // Convierte el String en numero
+console.log(numero1 + numero2); // se concatena
+console.log(numero1 * numero2); // convierte el String en numero
 
 // 3.2 
 console.log(String(25));    // "25"   string
@@ -140,11 +140,11 @@ console.log(" 5. Funciones y Arrow Functions");
 function multiplicar(a, b) {
   return a * b;
 }
-console.log(multiplicar(4, 5)); // 20
+console.log(multiplicar(4, 5)); // da 20
 
 // 5.2
 const multiArrow = (a, b) => a * b;
-console.log(multiArrow(4, 5)); // 20
+console.log(multiArrow(4, 5)); // da 20
 
 //5.3
 const saludar = () => "¡Hola a todos!";
@@ -175,7 +175,7 @@ function mostrarColores() {
 mostrarColores();
 
 console.log(global);   
-//console.log(local); Esta variable no existe por fuera de la función, da error
+//console.log(local); esta variable no existe por fuera de la función, da error
 
 
 // 6.2
@@ -187,7 +187,7 @@ let coche = {
 };
 
 coche.mostrarMarca();
-//.this se refiere al objeto actual en el que se ejecuta el codigo, o sea coche
+//.this se refiere al objeto actual en el que se ejecuta el codigo, o sea q es coche
 
 
 
@@ -270,6 +270,14 @@ class Animal {
 
 let miAnimal = new Animal("Misifus");
 console.log(miAnimal.saludar());
+
+
+
+
+
+
+
+
 
 
 // 8.3
